@@ -1,6 +1,6 @@
 import React from 'react'
-import Matter from '../Matter'
-import Intro from '../Intro'
+import Matter from './Matter'
+import Intro from './Intro'
 
 import './styles.scss'
 

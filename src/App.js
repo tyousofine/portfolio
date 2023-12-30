@@ -3,6 +3,8 @@ import './App.css';
 //components
 import HeroContainer from './components/HeroContainer';
 import NavBar from './components/NavBar';
+import AboutContainer from './components/AboutContainer';
+
 
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
     <div className="App">
       <NavBar />
       <HeroContainer />
+      <AboutContainer />
 
     </div>
   );
