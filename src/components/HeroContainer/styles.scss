@@ -1,0 +1,13 @@
+.container-hero {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .container-hero {
+    flex-direction: column;
+    gap: 5%;
+  }
+}

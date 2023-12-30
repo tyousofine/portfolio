@@ -1,0 +1,12 @@
+.container-navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: green;
+  padding-right: 20px;
+
+  .nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+}
