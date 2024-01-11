@@ -4,6 +4,7 @@ import './App.css';
 import HeroContainer from './components/HeroContainer';
 import NavBar from './components/NavBar';
 import AboutContainer from './components/AboutContainer';
+import Skills from './components/Skills';
 
 
 
@@ -13,6 +14,8 @@ function App() {
       <NavBar />
       <HeroContainer />
       <AboutContainer />
+      <Skills />
+
 
     </div>
   );

@@ -23,6 +23,7 @@ function Matter(props) {
             cw = window.innerWidth
         }
         ch = 300;
+        console.log({ cw })
     }
 
     updateDimensions()
@@ -193,7 +194,7 @@ function Matter(props) {
 
                     <div className='scene' ref={scene} ></div>
                 </div>
-                <form><button onClick={(e) => (console.log('just to force refresh'))} >Reset</button></form>
+                <form><button onClick={updateDimensions} >Reset</button></form>
             </>
 
         </div>

@@ -1,0 +1,29 @@
+.skills {
+  background-color: #1b1c1c;
+  display: flex;
+  flex-direction: column;
+
+  .frontEnd {
+    display: flex;
+  }
+
+  .javascript {
+    display: flex;
+  }
+
+  .backEnd {
+    display: flex;
+  }
+
+  .tools {
+    display: flex;
+  }
+
+  .design {
+    display: flex;
+  }
+
+  p {
+    color: #00ffff;
+  }
+}

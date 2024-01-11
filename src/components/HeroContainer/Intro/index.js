@@ -5,7 +5,7 @@ import './styles.scss'
 
 export default function Intro() {
     return (
-        <div className='container-intro'>
+        <div className='intro'>
             <h2>Tina Youssefian</h2>
             <p>Web Developer</p>
         </div>
