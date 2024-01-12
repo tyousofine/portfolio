@@ -1,0 +1,13 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 5%;
+  border: 1px solid green;
+  border-radius: 8px;
+  img {
+    width: 100%;
+    border: 1px solid yellow;
+    border-radius: 8px;
+  }
+}

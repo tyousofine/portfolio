@@ -2,28 +2,24 @@
   background-color: #1b1c1c;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .frontEnd {
+  .skill-section {
     display: flex;
-  }
 
-  .javascript {
-    display: flex;
-  }
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        color: #00ffff;
+        font-size: 40px;
+      }
 
-  .backEnd {
-    display: flex;
-  }
-
-  .tools {
-    display: flex;
-  }
-
-  .design {
-    display: flex;
-  }
-
-  p {
-    color: #00ffff;
+      p {
+        color: #00ffff;
+      }
+    }
   }
 }
