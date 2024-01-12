@@ -1,0 +1,13 @@
+.container-contact {
+  background-color: yellow;
+  margin: 0 5%;
+
+  input,
+  textarea {
+    background-color: transparent;
+    border-color: blue;
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+  }
+}

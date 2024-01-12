@@ -9,7 +9,6 @@ import './styles.scss'
 // this component is used in App
 export default function Projects() {
 
-    console.log("projects received from db: ", projects)
 
 
     return (

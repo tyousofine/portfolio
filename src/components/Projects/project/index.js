@@ -4,7 +4,7 @@ import './styles.scss'
 
 // this component is used in Projects
 export default function ProjectCard({ image, title, webLink, codeLink, stack, description }) {
-    console.log('image passed from projects: ', image)
+
     return (
         <div className='project'>
             <img src={image} alt="asdf" />
