@@ -1,5 +1,17 @@
 @import "./variables.scss";
 
+#root {
+  font-family: "Nunito sans", Arial, sans-serif;
+}
+
 body {
+  background-color: $body-color;
+  color: $main-color;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  max-width: 1200px;
   background-color: $background-color;
 }

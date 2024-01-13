@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/index.scss';
 
 //components
 import HeroContainer from './components/HeroContainer';

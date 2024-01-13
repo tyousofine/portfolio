@@ -33,6 +33,7 @@ function Matter(props) {
 
     useEffect(() => {
         updateDimensions();
+        // const radius = Math.min(cw, ch) / 2 - padding;
 
         render.current = Render.create({
             element: scene.current,
@@ -40,11 +41,14 @@ function Matter(props) {
             options: {
                 width: cw,
                 height: ch,
+
                 wireframes: false,
+                background: '#111',
 
                 // background: 'rgba(177,162,202, 0.1)'
             }
         })
+
 
         World.add(engine.current.world, [
             Bodies.rectangle(cw / 2, -10, cw, 20, {
@@ -67,6 +71,9 @@ function Matter(props) {
                 isStatic: true, render: {
                     strokeStyle: '#111',
                 }
+
+
+
             }),
         ])
 
