@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.sectionTitle {
+  margin: 7rem 0 4rem 0;
+
+  text-align: center;
+
+  h4 {
+    margin: auto;
+    width: fit-content;
+
+    border-bottom: 1px solid $accent-color;
+  }
+}

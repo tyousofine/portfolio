@@ -2,6 +2,9 @@ import React from 'react'
 
 import './styles.scss'
 
+// component imports 
+import SectionTitle from '../SectionTitle';
+
 //icon imports
 import { MdOutlineRunningWithErrors } from "react-icons/md";
 import * as FaIcons from "react-icons/fa"
@@ -29,7 +32,7 @@ export default function Skills() {
 
     return (
         <div className='skills'>
-
+            <SectionTitle sectionTitle={"Skills"}></SectionTitle>
             <div className='skill-section'>
                 <ReactIcon iconName="FaHtml5" className="icon" text="HTML5" />
                 <ReactIcon iconName="FaCss3Alt" className="icon" text="CSS3" />

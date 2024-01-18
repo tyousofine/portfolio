@@ -1,11 +1,29 @@
-.container-navbar {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
+@import "../../styles/variables.scss";
 
-  .nav-ul {
-    list-style: none;
+.container-navbar {
+  display: none;
+}
+
+#hamburger {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+}
+
+@include breakpoint-small {
+  #hamburger {
+    display: none;
+  }
+  .container-navbar {
     display: flex;
-    gap: 2rem;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+    .nav-ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
   }
 }

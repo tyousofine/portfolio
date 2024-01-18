@@ -7,10 +7,9 @@ import './styles.scss'
 export default function Slogan() {
     return (
         <div className='slogan'>
-            <p>Do typing text?</p>
-            <p>Web Developer</p>
-            <p>Angular Developer</p>
-            <p>React Developer</p>
+            <h2>I am a: </h2>
+            <h2><span></span></h2>
+
         </div>
     )
 }

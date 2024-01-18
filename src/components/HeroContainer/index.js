@@ -1,6 +1,7 @@
 import React from 'react'
 import Matter from './Matter'
 import Intro from './Intro'
+import ContactLink from './ContactLink'
 
 import './styles.scss'
 
@@ -9,6 +10,7 @@ export default function HeroContainer() {
         <div className="container-hero">
             <Matter />
             <Intro />
+            <ContactLink />
         </div>
 
     )

@@ -2,6 +2,7 @@
 
 #root {
   font-family: "Nunito sans", Arial, sans-serif;
+  // font-family: "Roboto", Arial, sans-serif;
 }
 
 body {
@@ -14,4 +15,25 @@ body {
 .App {
   max-width: 1200px;
   background-color: $background-color;
+  padding: 0 3%;
+}
+
+h1 {
+  color: $text-color;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  color: $main-color;
+}
+
+h4 {
+  color: linear-gradient($accent-color, $main-color, $accent-color);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+p {
+  color: $text-color;
 }

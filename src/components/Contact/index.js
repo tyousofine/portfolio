@@ -16,7 +16,7 @@ export default function Contact() {
 
     return (
 
-        <div className='container-contact'>
+        <div className='container-contact' id='form-contact'>
 
             <form onSubmit={contactSubmitHandler}>
                 <label>

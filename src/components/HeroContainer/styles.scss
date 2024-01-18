@@ -1,17 +1,28 @@
+@import "../../styles/variables.scss";
+
 .container-hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20%;
-
-  padding: 0 2%;
+  gap: 2rem;
+  margin-top: 3rem;
 
   .intro {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 600px) {
+@include breakpoint-small {
   .container-hero {
-    flex-direction: column;
-    gap: 5%;
+    flex-direction: row;
+    justify-content: center;
+
+    .container-matter {
+      width: 60%;
+    }
+
+    .intro {
+      width: 40%;
+    }
   }
 }

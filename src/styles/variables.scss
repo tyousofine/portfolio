@@ -2,6 +2,25 @@
 $body-color: #0a0f1b;
 // $body-color: #151f36;
 $background-color: #0f172a;
-$card-color: #cbd5e1;
+$card-color: #1e293b;
 $main-color: #3b82f6;
+$accent-color: #ffa500;
 $text-color: #cbd5e1;
+
+@mixin breakpoint($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small {
+  @include breakpoint(600px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large {
+  @include breakpoint(1200px) {
+    @content;
+  }
+}

@@ -1,6 +1,29 @@
-.matter-container {
+@import "../../../styles/variables.scss";
+
+.container-matter {
+  form {
+    position: relative;
+    button {
+      background-color: transparent;
+      border: none;
+      color: $main-color;
+      font-size: 8px;
+      opacity: 0.5;
+      position: absolute;
+      margin-top: 5px;
+    }
+  }
+
+  .scene {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 10px 0px #ffa50033;
+    background-color: $body-color;
+  }
 }
 
-.matter-container:hover {
-  cursor: grab;
+@include breakpoint-small {
+  .container-matter:hover {
+    cursor: grab;
+  }
 }

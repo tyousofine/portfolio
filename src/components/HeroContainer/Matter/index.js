@@ -12,7 +12,7 @@ function Matter(props) {
     const engine = useRef(Engine.create())
     const render = useRef(null)
 
-    const padding = 20;
+    const padding = 50;
 
     let [intervalCount, setIntervalCount] = useState(0)
 
@@ -43,12 +43,11 @@ function Matter(props) {
                 height: ch,
 
                 wireframes: false,
-                background: '#111',
-
-                // background: 'rgba(177,162,202, 0.1)'
+                // background: '#1b1c1c'
+                // background: '#1e293b'
+                background: '#0a0f1b'
             }
         })
-
 
         World.add(engine.current.world, [
             Bodies.rectangle(cw / 2, -10, cw, 20, {
@@ -67,12 +66,11 @@ function Matter(props) {
                     strokeStyle: '#111'
                 }
             }),
+            // bottom boundary
             Bodies.rectangle(cw + 10, ch / 2, 20, ch, {
                 isStatic: true, render: {
                     strokeStyle: '#111',
                 }
-
-
 
             }),
         ])
@@ -188,10 +186,8 @@ function Matter(props) {
     }
 
     return (
-        <div className='matter-container' >
+        <div className='container-matter' >
             <>
-                <div className='instructions-container' >click & move
-                </div>
                 <div
                     onMouseDown={handleMouseDown}
                     onMouseUp={handleMouseUp}
