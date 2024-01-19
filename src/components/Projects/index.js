@@ -3,6 +3,7 @@ import { projects } from '../../data/projects.js'
 
 //component imports
 import ProjectCard from './project'
+import SectionTitle from '../SectionTitle/index.js'
 
 import './styles.scss'
 
@@ -13,7 +14,7 @@ export default function Projects() {
 
     return (
         <div className='container-projects'>
-            testing
+            <SectionTitle sectionTitle={"Projects"} />
             {projects.map((project, index) =>
 
                 < ProjectCard key={index} {...project} />
