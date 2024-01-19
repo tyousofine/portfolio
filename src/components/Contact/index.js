@@ -3,6 +3,9 @@ import React from 'react'
 import { useState } from 'react'
 import './styles.scss'
 
+// component imports
+import SectionTitle from '../SectionTitle';
+
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -17,6 +20,7 @@ export default function Contact() {
     return (
 
         <div className='container-contact' id='form-contact'>
+            <SectionTitle sectionTitle="Contact" />
 
             <form onSubmit={contactSubmitHandler}>
                 <label>
@@ -50,7 +54,7 @@ export default function Contact() {
                     />
                 </label>
 
-                <button>Send</button>
+                <button className='contact-btn'>Send</button>
             </form>
         </div>
     )

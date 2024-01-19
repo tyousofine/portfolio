@@ -1,14 +1,46 @@
 @import "../../styles/variables.scss";
 
 .container-contact {
-  margin: 0 5%;
+  margin: 0 1rem;
 
-  input,
-  textarea {
-    background-color: transparent;
-    border-color: $main-color;
-    border-radius: 4px;
-    display: flex;
-    width: 100%;
+  form {
+    background-color: $card-color;
+    padding: 1rem;
+    border-radius: 8px;
+
+    input,
+    textarea {
+      background-color: transparent;
+      border-color: $main-color;
+      border-radius: 4px;
+      display: flex;
+      width: 100%;
+      color: $text-color;
+      margin: 1rem 0;
+      padding: 0.2rem 0.5rem;
+
+      &:focus {
+        outline: none;
+        border-color: $accent-color;
+      }
+    }
+    .contact-btn {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      background-color: transparent;
+      outline: none;
+      border: 1px solid $accent-color;
+      color: $text-color;
+      text-transform: uppercase;
+
+      letter-spacing: 0.1rem;
+      padding: 0.5rem;
+      border-radius: 12px;
+
+      &:active {
+        background-color: $main-color;
+      }
+    }
   }
 }

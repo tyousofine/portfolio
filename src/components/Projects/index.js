@@ -16,7 +16,6 @@ export default function Projects() {
         <div className='container-projects'>
             <SectionTitle sectionTitle={"Projects"} />
             {projects.map((project, index) =>
-
                 < ProjectCard key={index} {...project} />
 
             )}
