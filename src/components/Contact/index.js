@@ -8,6 +8,7 @@ import SectionTitle from '../SectionTitle';
 
 export default function Contact() {
     const [name, setName] = useState('');
+    const [subject, setSubject] = useState('')
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
@@ -23,16 +24,26 @@ export default function Contact() {
             <SectionTitle sectionTitle="Contact" />
 
             <form onSubmit={contactSubmitHandler}>
-                <label>
-                    <input
-                        type="text"
-                        onChange={(e) => setName(e.target.value)}
-                        value={name}
-                        placeholder='name'
-                    />
-                </label>
-                <label>
+                <div>
+                    <label>
+                        <input
+                            type="text"
+                            onChange={(e) => setName(e.target.value)}
+                            value={name}
+                            placeholder='name'
+                        />
+                    </label>
+                    <label>
+                        <input
+                            type="text"
+                            onChange={(e) => setSubject(e.target.value)}
+                            value={subject}
+                            placeholder='subject'
+                        />
+                    </label>
+                </div>
 
+                <label>
                     <input
                         type="text"
                         onChange={(e) => setEmail(e.target.value)}

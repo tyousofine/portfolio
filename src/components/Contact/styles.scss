@@ -8,12 +8,16 @@
     padding: 1rem;
     border-radius: 8px;
 
+    div {
+      display: flex;
+      gap: 0.5rem;
+    }
+
     input,
     textarea {
       background-color: transparent;
       border-color: $main-color;
       border-radius: 4px;
-      display: flex;
       width: 100%;
       color: $text-color;
       margin: 1rem 0;
