@@ -31,7 +31,7 @@ export default function Skills() {
     }
 
     return (
-        <div className='skills'>
+        <div className='skills' id='skills'>
             <SectionTitle sectionTitle={"Skills"}></SectionTitle>
             <div className='skill-section'>
                 <ReactIcon iconName="FaHtml5" className="icon" text="HTML5" />

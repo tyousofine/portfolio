@@ -11,7 +11,7 @@ import SectionTitle from '../SectionTitle'
 
 export default function AboutContainer() {
     return (
-        <div className='container-about'>
+        <div className='container-about' id='container-about'>
             <SectionTitle sectionTitle={"About"} />
             <Slogan />
             <About />

@@ -200,7 +200,7 @@ function Matter(props) {
 
                     <div className='scene' ref={scene} ></div>
                 </div>
-                <form><button onClick={updateDimensions} >Reset</button></form>
+                <form className='resetBtn'><button onClick={updateDimensions} >Reset</button></form>
             </>
 
         </div>

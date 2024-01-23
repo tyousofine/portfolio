@@ -1,33 +1,55 @@
 import React from 'react'
 import './styles.scss'
 
-// import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
+// Icon imports
 import { RxHamburgerMenu } from "react-icons/rx";
+import { ImCross } from "react-icons/im";
 
 
-
-
-// component used in App.js
+// this component is used in App.js
 export default function NavBar() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
+    const [isShowing, setIsShowing] = useState(true)
+
+
+    const closeMenuHandler = (e) => {
+        e.preventDefault();
+        navigate('/')
+        setIsShowing(!isShowing)
+    }
+
 
     const hamburgerHandler = (event) => {
         event.preventDefault()
-        console.log("was clicked")
-
+        setIsShowing(!isShowing)
 
     }
 
     return (
-        <div>
+        <div className='container-navbar'>
 
-            <RxHamburgerMenu id='hamburger' onClick={hamburgerHandler} />
+            {/* hamburger menu and pop up links for mobile size */}
+            {!!isShowing ? (
+                <RxHamburgerMenu onClick={hamburgerHandler} className='hamburger' />
 
+            ) : (
 
+                <div className='container-hamburger'>
+                    <ImCross onClick={closeMenuHandler} />
+                    <ul>
+                        <a href="#form-contact" onClick={() => setIsShowing(true)} ><li>Contact</li></a>
+                        <a href="#container-projects" onClick={() => setIsShowing(true)}><li>Projects</li></a>
+                        <a href="#skills" onClick={() => setIsShowing(true)}><li>Skills</li></a>
+                        <a href="#container-about" onClick={() => setIsShowing(true)}><li>About</li></a>
+                    </ul>
+                </div>
+            )}
 
-            <nav className='container-navbar'>
+            {/* navbar for desktop size */}
+            <nav className='navbar'>
                 <ul className='nav-ul'>
                     <li className='nav-list'>About</li>
                     <li className='nav-list'>Skills</li>

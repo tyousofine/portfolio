@@ -17,15 +17,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-
-        <Routes>
-          <Route path='hero' element={<HeroContainer />}></Route>
-          <Route path='aboutContainer' element={<AboutContainer />}></Route>
-          <Route path='skills' element={<Skills />}></Route>
-          <Route path='projects' element={<Projects />}></Route>
-          <Route path='contact' element={<Contact />}></Route>
-        </Routes>
-
         <NavBar />
         <HeroContainer />
         <AboutContainer />

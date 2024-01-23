@@ -1,12 +1,14 @@
 @import "./variables.scss";
 
-#root {
+#root,
+html {
   font-family: "Nunito sans", Arial, sans-serif;
   // font-family: "Roboto", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: $body-color;
+  background-color: $background-color;
   color: $main-color;
   display: flex;
   justify-content: center;

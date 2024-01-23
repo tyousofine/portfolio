@@ -13,7 +13,7 @@ export default function Projects() {
 
 
     return (
-        <div className='container-projects'>
+        <div className='container-projects' id='container-projects'>
             <SectionTitle sectionTitle={"Projects"} />
             {projects.map((project, index) =>
                 < ProjectCard key={index} {...project} />

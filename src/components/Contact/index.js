@@ -23,7 +23,7 @@ export default function Contact() {
         <div className='container-contact' id='form-contact'>
             <SectionTitle sectionTitle="Contact" />
 
-            <form onSubmit={contactSubmitHandler}>
+            <form className="form-contact" onSubmit={contactSubmitHandler}>
                 <div>
                     <label>
                         <input

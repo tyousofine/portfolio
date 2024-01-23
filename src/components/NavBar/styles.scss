@@ -1,29 +1,63 @@
 @import "../../styles/variables.scss";
-
 .container-navbar {
-  display: none;
-}
-
-#hamburger {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-}
-
-@include breakpoint-small {
-  #hamburger {
+  background-color: $body-color;
+  .navbar {
     display: none;
   }
-  .container-navbar {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
 
-    .nav-ul {
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .container-hamburger {
+    position: fixed;
+    right: 0px;
+    top: 10px;
+    background-color: $card-color;
+    width: 30%;
+    height: 25%;
+    padding: 30px 10px;
+    border-radius: 4px;
+
+    svg {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+    }
+
+    ul {
       list-style: none;
+      padding: 1rem;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+
+        li {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint-small {
+    .hamburger {
+      display: none;
+    }
+    .navbar {
       display: flex;
-      gap: 2rem;
+      justify-content: flex-end;
+      padding-right: 20px;
+
+      .nav-ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
     }
   }
 }
