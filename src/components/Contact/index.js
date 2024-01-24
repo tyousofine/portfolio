@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { useState } from 'react'
+import emailjs from '@emailjs/browser';
+
+import { useState, useRef } from 'react'
 import './styles.scss'
 
 // component imports
@@ -11,11 +13,19 @@ export default function Contact() {
     const [subject, setSubject] = useState('')
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const form = useRef();
 
 
     const contactSubmitHandler = (e) => {
         e.preventDefault()
         console.log("submit clicked")
+
+        emailjs.sendForm('contact_service_fwzcr53', 'contact_service_fwzcr53', form.current, 'r-4MZ2Qvw5nxxX5nN')
+            .then((res) => {
+                console.log(res.text)
+            }, (error) => {
+                console.log(error.text)
+            });
     }
 
     return (
@@ -23,7 +33,7 @@ export default function Contact() {
         <div className='container-contact' id='form-contact'>
             <SectionTitle sectionTitle="Contact" />
 
-            <form className="form-contact" onSubmit={contactSubmitHandler}>
+            <form ref={form} className="form-contact" onSubmit={contactSubmitHandler}>
                 <div>
                     <label>
                         <input
@@ -31,6 +41,7 @@ export default function Contact() {
                             onChange={(e) => setName(e.target.value)}
                             value={name}
                             placeholder='name'
+                            name='user_name'
                         />
                     </label>
                     <label>
@@ -45,10 +56,11 @@ export default function Contact() {
 
                 <label>
                     <input
-                        type="text"
+                        type="email"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                         placeholder='email'
+                        name="user_email"
 
                     />
                 </label>
@@ -61,6 +73,7 @@ export default function Contact() {
                         placeholder='message'
                         rows={10}
                         cols={30}
+                        name='message'
 
                     />
                 </label>
