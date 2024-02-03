@@ -20,7 +20,7 @@ function Matter(props) {
 
     const updateDimensions = () => {
         if (window.innerWidth > 600) {
-            cw = window.innerWidth / 2.2 - padding;
+            cw = window.innerWidth / 2.8 - padding;
         } else {
             cw = window.innerWidth - padding
         }

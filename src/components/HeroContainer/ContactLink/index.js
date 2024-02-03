@@ -1,6 +1,8 @@
 import React from 'react'
 
 import './styles.scss'
+
+//Component used in Intro Component
 export default function ContactLink() {
     return (
         <div className="contactLinks">

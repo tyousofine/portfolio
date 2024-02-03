@@ -1,23 +1,26 @@
 @import "./variables.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
 #root,
 html {
+  // font-family: "Quicksand", Arial, sans-serif;
   font-family: "Nunito sans", Arial, sans-serif;
   // font-family: "Roboto", Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: $background-color;
+  background-color: $body-color;
   color: $main-color;
   display: flex;
   justify-content: center;
+  font-size: 18px;
 }
 
 .App {
   max-width: 1200px;
   background-color: $background-color;
-  padding: 0 3%;
 }
 
 h1 {
@@ -38,4 +41,23 @@ h4 {
 
 p {
   color: $text-color;
+}
+
+@mixin slide-in {
+  width: 100%;
+  overflow: hidden;
+
+  animation: slide-left 1s;
+
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 }

@@ -37,7 +37,7 @@ export default function NavBar() {
 
             ) : (
 
-                <div className='container-hamburger'>
+                <div className="container-hamburger">
                     <ImCross onClick={closeMenuHandler} />
                     <ul>
                         <a href="#form-contact" onClick={() => setIsShowing(true)} ><li>Contact</li></a>

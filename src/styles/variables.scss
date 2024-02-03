@@ -25,3 +25,22 @@ $text-color: #cbd5e1;
     @content;
   }
 }
+
+@mixin slide-in {
+  width: 100%;
+  overflow: hidden;
+
+  animation: slide-left 1s;
+
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}

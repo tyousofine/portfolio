@@ -10,7 +10,8 @@ export default function HeroContainer() {
         <div className="container-hero">
             <Matter />
             <Intro />
-            <ContactLink />
+
+
         </div>
 
     )

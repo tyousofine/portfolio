@@ -1,1 +1,6 @@
+@import "../../../styles/variables.scss";
+.intro {
+  text-align: center;
 
+  @include slide-in;
+}

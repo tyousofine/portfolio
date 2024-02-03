@@ -1,21 +1,16 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
+import ContactLink from '../ContactLink'
 
 import './styles.scss'
 
-
-
-
-// this component is used in HeroContainer
+// Component used in HeroContainer
 export default function Intro() {
     return (
         <div className='intro'>
             <h1>Tina Youssefian</h1>
             <h2>Web Developer</h2>
-            <div className='contactMe'>
-
-            </div>
+            <ContactLink />
         </div>
     )
 }
