@@ -5,7 +5,7 @@ export const projects = [{
     image: onTrack,
     title: 'OnTrack',
     stack: ['react', 'js', 'html', 'css'],
-    description: 'A simple project or task managing desktop app, designed and effective to small to medium sized teams. App comes with and data management, as well as a live chat and comment feature.',
+    description: 'A simple project and task managing desktop app, designed and effective for small to medium sized teams. App comes with and authentication, data management, as well as a live chat and comment feature.',
     webLink: "https://www.google.com",
     codeLink: "https://www.github.com"
 },
