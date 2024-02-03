@@ -1,7 +1,8 @@
+import onTrack from '../images/onTrack.png'
 import sample from '../images/sample.png'
 
 export const projects = [{
-    image: sample,
+    image: onTrack,
     title: 'OnTrack',
     stack: ['react', 'js', 'html', 'css'],
     description: 'A simple project or task managing desktop app, designed and effective to small to medium sized teams. App comes with and data management, as well as a live chat and comment feature.',

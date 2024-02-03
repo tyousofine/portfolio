@@ -1,6 +1,6 @@
 import './styles/index.scss';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 //components
 import HeroContainer from './components/HeroContainer';
