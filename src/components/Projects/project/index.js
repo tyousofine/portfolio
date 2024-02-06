@@ -20,8 +20,8 @@ export default function ProjectCard({ image, title, webLink, codeLink, stack, de
             <h3>{title}</h3>
             <p className='description'>{description}</p>
             <div className='links'>
-                <a href={webLink} target='_blank' rel="noreferrer"><FaGithub /></a>
-                <a href={codeLink} target='_blank' rel='noreferrer'><TbWorldWww /></a>
+                <a href={webLink} target='_blank' rel='noreferrer'><TbWorldWww /></a>
+                <a href={codeLink} target='_blank' rel="noreferrer"><FaGithub /></a>
             </div>
         </div >
     )

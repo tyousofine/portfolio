@@ -19,7 +19,7 @@
   }
 
   .stackList {
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -30,13 +30,15 @@
       width: 4rem;
       text-align: center;
       border-radius: 4px;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
+      padding: 0.1rem 0;
     }
   }
 
   .description {
     text-align: center;
     font-size: 0.9rem;
+    padding: 1rem;
   }
 
   .links {
