@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Engine, Render, Bodies, World } from 'matter-js'
 import Me from './mebwsm.png';
 import Logo from '../../../images/TYlogoTransparent.png';
+import OrangeLogo from '../../../images/logoOrange.png';
 
 import './styles.scss'
 
@@ -17,9 +18,11 @@ function Matter(props) {
 
     let [meIntervalCount, setMeIntervalCount] = useState(0)
     let [logoIntervalCount, setLogoIntervalCount] = useState(0)
+    let [orangeLogoIntervalCount, setOrangeLogoIntervalCount] = useState(0)
 
     let cw, ch;
 
+    // function to update frame size based on screen size change
     const updateDimensions = () => {
         if (window.innerWidth > 600) {
             cw = window.innerWidth / 2.7 - padding;
@@ -27,26 +30,20 @@ function Matter(props) {
             cw = window.innerWidth - padding
         }
         ch = 300;
-
     }
 
     updateDimensions()
 
-
+    // render engine. add elements and scene upon loading
     useEffect(() => {
         updateDimensions();
-        // const radius = Math.min(cw, ch) / 2 - padding;
-
         render.current = Render.create({
             element: scene.current,
             engine: engine.current,
             options: {
                 width: cw,
                 height: ch,
-
                 wireframes: false,
-                // background: '#1b1c1c'
-                // background: '#1e293b'
                 background: '#0a0f1b'
             }
         })
@@ -81,7 +78,6 @@ function Matter(props) {
         Render.run(render.current)
 
         return () => {
-
             Render.stop(render.current)
             World.clear(engine.current.world)
             Engine.clear(engine.current)
@@ -92,6 +88,7 @@ function Matter(props) {
         }
     }, [cw, ch])
 
+    // create and add drop functions for images dropping
     useEffect(() => {
         const createMe = () => World.add(engine.current.world, Bodies.circle(Math.random() * cw, 0, 10 + Math.random() * 20, {
             mass: 10, restitution: 1, friction: 0.005, render: {
@@ -113,6 +110,16 @@ function Matter(props) {
                     }
                 }
             }))
+        const createOrangeLogo = () =>
+            World.add(engine.current.world, Bodies.circle(Math.random() * cw, 0, 10 + Math.random() * 20, {
+                mass: 10, restitution: 1, friction: 0.005, render: {
+                    sprite: {
+                        texture: OrangeLogo,
+                        xScale: 0.4,
+                        yScale: 0.4
+                    }
+                }
+            }))
 
         const dropMe = setInterval(() => {
             createMe();
@@ -128,15 +135,27 @@ function Matter(props) {
             createLogo()
             setLogoIntervalCount(logoIntervalCount += 1);
 
-            if (logoIntervalCount >= 15) {
-                clearInterval(dropMe)
+            if (logoIntervalCount >= 10) {
+                clearInterval(dropLogo)
             }
 
-        }, 2500);
+        }, 4500);
 
+        const dropOrangeLogo = setInterval(() => {
+            createOrangeLogo()
+            setOrangeLogoIntervalCount(orangeLogoIntervalCount += 1);
+
+            if (logoIntervalCount >= 5) {
+                clearInterval(dropOrangeLogo)
+            }
+
+        }, 6000);
+
+        // cleanup
         return () => {
             clearInterval(dropMe)
             clearInterval(dropLogo);
+            clearInterval(dropOrangeLogo)
         }
 
     }, [])

@@ -10,6 +10,9 @@ import { MdOutlineRunningWithErrors } from "react-icons/md";
 import * as FaIcons from "react-icons/fa"
 import * as SiIcon from 'react-icons/si'
 
+import * as TbBrand from "react-icons/tb";
+
+
 
 export default function Skills() {
 
@@ -20,9 +23,13 @@ export default function Skills() {
             Icon = FaIcons[iconName]
         } else if (SiIcon[iconName]) {
             Icon = SiIcon[iconName]
+        } else if (TbBrand[iconName]) {
+            Icon = TbBrand[iconName]
+        }
 
-            // add other cases here if different icon libraries used
-        } else {
+        // add other cases here if different icon libraries used
+
+        else {
             Icon = MdOutlineRunningWithErrors
             text = '...'
         }
@@ -42,7 +49,10 @@ export default function Skills() {
             <div className='skill-section'>
                 <ReactIcon iconName="SiJavascript" className="icon" text="Javascript" />
                 <ReactIcon iconName="FaReact" className="icon" text="React" />
+                <ReactIcon iconName="TbBrandReactNative" className="icon" text="React Native" />
                 <ReactIcon iconName="FaAngular" className="icon" text="Angular" />
+            </div>
+            <div className="skill-section">
                 <ReactIcon iconName="SiNextdotjs" className="icon" text="Next.js" />
                 <ReactIcon iconName="SiD3Dotjs" className="icon" text="D3.js" />
                 <ReactIcon iconName="SiMatterdotjs" className="icon" text="Matter.js" />
