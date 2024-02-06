@@ -22,7 +22,7 @@ export const projects = [{
     image: todoApp,
     title: "TY's Todo App",
     stack: ['JS', 'React Native', 'SQLITE'],
-    description: "Who hasn't done a todo App in their coding journey? And here is a mine. A simple todo app for Android devices, published in Google Playstore. App is built with React Native and uses SQLite the the device's local storage.",
+    description: "Who hasn't done a todo App in their coding journey? And here is a mine. A simple todo app for Android devices, published in Google Playstore. App is built with React Native and uses SQLite and the device's local storage.",
     expoSnack: "https://snack.expo.dev/@tyousofine/tystodoapp?platform=android",
     googlePlay: "http://play.google.com/store/apps/details?id=com.ty.creations.todo.app"
 }

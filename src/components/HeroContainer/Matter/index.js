@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Engine, Render, Bodies, World } from 'matter-js'
-import Logo from './mebwsm.png'
+import Me from './mebwsm.png';
+import Logo from '../../../images/TYlogoTransparent.png';
 
 import './styles.scss'
 
@@ -14,7 +15,8 @@ function Matter(props) {
 
     const padding = 10;
 
-    let [intervalCount, setIntervalCount] = useState(0)
+    let [meIntervalCount, setMeIntervalCount] = useState(0)
+    let [logoIntervalCount, setLogoIntervalCount] = useState(0)
 
     let cw, ch;
 
@@ -91,28 +93,50 @@ function Matter(props) {
     }, [cw, ch])
 
     useEffect(() => {
-        const createBall = () => World.add(engine.current.world, Bodies.circle(Math.random() * cw, 0, 10 + Math.random() * 20, {
+        const createMe = () => World.add(engine.current.world, Bodies.circle(Math.random() * cw, 0, 10 + Math.random() * 20, {
             mass: 10, restitution: 1, friction: 0.005, render: {
                 sprite: {
-                    texture: Logo,
+                    texture: Me,
                     xScale: 0.05,
                     yScale: 0.05
                 }
             }
         }))
 
-        const dropMe = setInterval(() => {
-            createBall();
-            setIntervalCount(intervalCount += 1);
+        const createLogo = () =>
+            World.add(engine.current.world, Bodies.circle(Math.random() * cw, 0, 10 + Math.random() * 20, {
+                mass: 10, restitution: 1, friction: 0.005, render: {
+                    sprite: {
+                        texture: Logo,
+                        xScale: 0.4,
+                        yScale: 0.4
+                    }
+                }
+            }))
 
-            if (intervalCount >= 30) {
+        const dropMe = setInterval(() => {
+            createMe();
+            setMeIntervalCount(meIntervalCount += 1);
+
+            if (meIntervalCount >= 30) {
                 clearInterval(dropMe)
             }
 
         }, 1000);
 
+        const dropLogo = setInterval(() => {
+            createLogo()
+            setLogoIntervalCount(logoIntervalCount += 1);
+
+            if (logoIntervalCount >= 15) {
+                clearInterval(dropMe)
+            }
+
+        }, 2500);
+
         return () => {
             clearInterval(dropMe)
+            clearInterval(dropLogo);
         }
 
     }, [])
@@ -139,7 +163,7 @@ function Matter(props) {
                     friction: 0.005,
                     render: {
                         sprite: {
-                            texture: Logo,
+                            texture: Me,
                             xScale: 0.05,
                             yScale: 0.05,
                         },
@@ -174,7 +198,7 @@ function Matter(props) {
                     friction: 0.005,
                     render: {
                         sprite: {
-                            texture: Logo,
+                            texture: Me,
                             xScale: 0.05,
                             yScale: 0.05
 
