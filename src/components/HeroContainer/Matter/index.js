@@ -12,7 +12,7 @@ function Matter(props) {
     const engine = useRef(Engine.create())
     const render = useRef(null)
 
-    const padding = 50;
+    const padding = 10;
 
     let [intervalCount, setIntervalCount] = useState(0)
 
@@ -20,7 +20,7 @@ function Matter(props) {
 
     const updateDimensions = () => {
         if (window.innerWidth > 600) {
-            cw = window.innerWidth / 2.8 - padding;
+            cw = window.innerWidth / 2.7 - padding;
         } else {
             cw = window.innerWidth - padding
         }
