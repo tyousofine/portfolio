@@ -20,7 +20,7 @@ export default function ProjectCard({ image, title, webLink, codeLink, stack, de
                     <p key={index}>{stack}</p>
                 ))}</>
             </div>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <p className='description'>{description}</p>
             <div className='links'>
                 {!!webLink &&
