@@ -3,51 +3,98 @@
 .container-contact {
   margin: 0 1rem;
   margin-bottom: 8rem;
+  position: relative;
 
-  form {
+  .container-form {
     background-color: $card-color;
-    padding: 1rem;
-    border-radius: 8px;
+    border: 1px solid $card-color;
+    border-radius: 4px;
 
-    div {
-      display: flex;
-      gap: 0.5rem;
-    }
+    form {
+      padding: 1rem;
+      border-radius: 8px;
 
-    input,
-    textarea {
-      background-color: transparent;
-      border-color: $main-color;
-      border-radius: 4px;
-      width: 100%;
-      color: $text-color;
-      opacity: 0.8;
-      margin: 1rem 0;
-      padding: 0.2rem 0.5rem;
-      font-family: inherit;
+      div {
+        display: flex;
+        gap: 0.5rem;
+      }
 
-      &:focus {
+      input,
+      textarea {
+        background-color: $card-color;
+        border-color: $main-color;
+        border-radius: 4px;
+        width: 100%;
+        color: white;
+        opacity: 0.8;
+        padding: 0.2rem 0.5rem;
+        font-family: inherit;
+        margin: 1rem 0;
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px $card-color inset !important;
+          -webkit-text-fill-color: white;
+        }
+
+        &::placeholder {
+          color: $text-color;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: $accent-color;
+
+          &::placeholder {
+            color: transparent;
+          }
+        }
+      }
+      .contact-btn {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        background-color: transparent;
         outline: none;
-        border-color: $accent-color;
+        border: 1px solid $accent-color;
+        color: $text-color;
+        text-transform: uppercase;
+
+        letter-spacing: 0.1rem;
+        padding: 0.5rem;
+        border-radius: 12px;
+
+        &:hover {
+          background-color: rgba($main-color, 0.3);
+        }
+
+        &:active {
+          background-color: rgba($main-color, 0.3);
+        }
       }
     }
-    .contact-btn {
-      display: block;
-      width: 50%;
-      margin: 0 auto;
-      background-color: transparent;
-      outline: none;
-      border: 1px solid $accent-color;
+    .contact-message {
+      background-color: rgba($text-color, 0.1);
       color: $text-color;
-      text-transform: uppercase;
+      border-radius: 4px;
+      margin: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.3rem 0.8rem;
 
-      letter-spacing: 0.1rem;
-      padding: 0.5rem;
-      border-radius: 12px;
-
-      &:active {
-        background-color: $main-color;
+      svg {
+        color: $text-color;
+        font-size: 1.3rem;
       }
+    }
+    .disabled {
+      display: none;
     }
   }
 }

@@ -125,7 +125,7 @@ function Matter(props) {
             createMe();
             setMeIntervalCount(meIntervalCount += 1);
 
-            if (meIntervalCount >= 30) {
+            if (meIntervalCount >= 40) {
                 clearInterval(dropMe)
             }
 
@@ -243,7 +243,7 @@ function Matter(props) {
 
                     <div className='scene' ref={scene} ></div>
                 </div>
-                <form className='resetBtn'><button onClick={updateDimensions} >Reset</button></form>
+                {/* <form className='resetBtn'><button onClick={updateDimensions} >Reset</button></form> */}
             </>
 
         </div>

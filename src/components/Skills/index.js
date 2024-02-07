@@ -40,49 +40,45 @@ export default function Skills() {
     return (
         <div className='skills' id='skills'>
             <SectionTitle sectionTitle={"Skills"}></SectionTitle>
-            <div className='skill-section'>
-                <ReactIcon iconName="FaHtml5" className="icon" text="HTML5" />
-                <ReactIcon iconName="FaCss3Alt" className="icon" text="CSS3" />
-                <ReactIcon iconName="FaSass" className="icon" text="Sass" />
-                <ReactIcon iconName="SiTailwindcss" className="icon" text="Tailwind" />
-            </div>
-            <div className='skill-section'>
-                <ReactIcon iconName="SiJavascript" className="icon" text="Javascript" />
-                <ReactIcon iconName="FaReact" className="icon" text="React" />
-                <ReactIcon iconName="TbBrandReactNative" className="icon" text="React Native" />
-                <ReactIcon iconName="FaAngular" className="icon" text="Angular" />
-            </div>
-            <div className="skill-section">
-                <ReactIcon iconName="SiNextdotjs" className="icon" text="Next.js" />
-                <ReactIcon iconName="SiD3Dotjs" className="icon" text="D3.js" />
-                <ReactIcon iconName="SiMatterdotjs" className="icon" text="Matter.js" />
-            </div>
-
-            <div className="skill-section">
-                <ReactIcon iconName="FaWordpress" className="icon" text="WordPress" />
-            </div>
-
-            <div className='skill-section'>
-                <ReactIcon iconName="SiMysql" className="icon" text="MySql" />
-                <ReactIcon iconName="SiFirebase" className="icon" text="Firebase" />
-                <ReactIcon iconName="SiMongodb" className="icon" text="MongoDB" />
-                <ReactIcon iconName="FaPhp" className="icon" text="PHP" />
-                <ReactIcon iconName="FaNodeJs" className="icon" text="NodeJs" />
-            </div>
-
-            <div className="skill-section">
-                <ReactIcon iconName="FaGitAlt" className="icon" text="Git" />
-                <ReactIcon iconName="FaGithub" className="icon" text="GitHub" />
-                <ReactIcon iconName="FaBitbucket" className="icon" text="Bitbucket" />
-
-            </div>
-
-            <div className="skill-section">
-                <ReactIcon iconName="SiCanva" className="icon" text="Canva" />
-                <ReactIcon iconName="FaFigma" className="icon" text="Figma" />
-                <ReactIcon iconName="SiAdobephotoshop" className="icon" text="Photoshop" />
-                <ReactIcon iconName="SiAdobeillustrator" className="icon" text="Illustrator" />
-
+            <div className="container-skills">
+                <div className='skill-section'>
+                    <ReactIcon iconName="FaHtml5" className="icon" text="HTML5" />
+                    <ReactIcon iconName="FaCss3Alt" className="icon" text="CSS3" />
+                    <ReactIcon iconName="FaSass" className="icon" text="Sass" />
+                    <ReactIcon iconName="SiTailwindcss" className="icon" text="Tailwind" />
+                </div>
+                <div className='skill-section'>
+                    <ReactIcon iconName="SiJavascript" className="icon" text="Javascript" />
+                    <ReactIcon iconName="FaReact" className="icon" text="React" />
+                    <ReactIcon iconName="TbBrandReactNative" className="icon" text="React Native" />
+                    <ReactIcon iconName="FaAngular" className="icon" text="Angular" />
+                </div>
+                <div className="skill-section">
+                    <ReactIcon iconName="SiNextdotjs" className="icon" text="Next.js" />
+                    <ReactIcon iconName="SiD3Dotjs" className="icon" text="D3.js" />
+                    <ReactIcon iconName="SiMatterdotjs" className="icon" text="Matter.js" />
+                </div>
+                <div className="skill-section">
+                    <ReactIcon iconName="FaWordpress" className="icon" text="WordPress" />
+                </div>
+                <div className='skill-section'>
+                    <ReactIcon iconName="SiMysql" className="icon" text="MySql" />
+                    <ReactIcon iconName="SiFirebase" className="icon" text="Firebase" />
+                    <ReactIcon iconName="SiMongodb" className="icon" text="MongoDB" />
+                    <ReactIcon iconName="FaPhp" className="icon" text="PHP" />
+                    <ReactIcon iconName="FaNodeJs" className="icon" text="NodeJs" />
+                </div>
+                <div className="skill-section">
+                    <ReactIcon iconName="FaGitAlt" className="icon" text="Git" />
+                    <ReactIcon iconName="FaGithub" className="icon" text="GitHub" />
+                    <ReactIcon iconName="FaBitbucket" className="icon" text="Bitbucket" />
+                </div>
+                <div className="skill-section">
+                    <ReactIcon iconName="SiCanva" className="icon" text="Canva" />
+                    <ReactIcon iconName="FaFigma" className="icon" text="Figma" />
+                    <ReactIcon iconName="SiAdobephotoshop" className="icon" text="Photoshop" />
+                    <ReactIcon iconName="SiAdobeillustrator" className="icon" text="Illustrator" />
+                </div>
             </div>
         </div>
     )
