@@ -50,7 +50,7 @@ export default function Contact() {
 
             <div className="container-form">
                 <form ref={form} className="form-contact" onSubmit={contactSubmitHandler}>
-                    <div>
+                    <div className='name-subject-container'>
                         <label>
 
                             <input

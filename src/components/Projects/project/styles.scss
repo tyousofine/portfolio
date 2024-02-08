@@ -1,57 +1,86 @@
 @import "../../../styles/variables.scss";
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // box-shadow: 0px 0px 10px 0px #ffa50055;
-  border-radius: 8px;
-  margin-bottom: 3rem;
-  background-color: $card-color;
-
-  img {
-    width: 95%;
-    margin: 0.5rem;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    background-color: $body-color;
-    margin-bottom: 1rem;
-  }
-
-  .stackList {
-    margin: 0 auto 2rem;
-    width: 100%;
+.innerContainer-projects {
+  .project {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    // box-shadow: 0px 0px 10px 0px #ffa50055;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    background-color: $card-color;
 
-    p {
-      box-shadow: 0px 0px 10px 0px #ffa50055;
-      border-color: rgba($accent-color, 0.4);
-      width: 4rem;
+    img {
+      width: 95%;
+      margin: 0.5rem;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      background-color: $body-color;
+      margin-bottom: 1rem;
+    }
+
+    .stackList {
+      margin: 0 auto 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      p {
+        box-shadow: 0px 0px 10px 0px #ffa50055;
+        border-color: rgba($accent-color, 0.4);
+        width: 4rem;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 0.6rem;
+        padding: 0.1rem 0;
+      }
+    }
+
+    .description {
       text-align: center;
-      border-radius: 4px;
-      font-size: 0.6rem;
-      padding: 0.1rem 0;
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $accent-color;
+
+        svg {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
-
-  .description {
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-
-  .links {
-    display: flex;
-    gap: 2rem;
-    margin: 1rem;
-
-    a {
-      text-decoration: none;
-      color: $accent-color;
-
-      svg {
-        font-size: 1.5rem;
+  @include breakpoint-small {
+    .project {
+      flex-direction: row;
+      justify-content: center;
+      .container-image-stack {
+        .stackList {
+          display: flex;
+        }
+        .project-image {
+          max-width: 500px;
+          min-width: 500px;
+          border-radius: 8px;
+          img {
+            border-radius: 8px;
+          }
+        }
+      }
+      .project-desc {
+        max-width: 500px;
+        .links {
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }

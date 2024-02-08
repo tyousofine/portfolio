@@ -14,27 +14,29 @@ export default function ProjectCard({ image, title, webLink, codeLink, stack, de
 
     return (
         <div className='project'>
-            <img src={image} alt="asdf" />
-            <div className="stackList">
-                <>{stack.map((stack, index) => (
+            <div className="container-image-stack">
+                <div className='project-image'><img src={image} alt="asdf" /></div>
+                <div className='stackList'>{stack.map((stack, index) => (
                     <p key={index}>{stack}</p>
-                ))}</>
+                ))}</div>
             </div>
-            <h4>{title}</h4>
-            <p className='description'>{description}</p>
-            <div className='links'>
-                {!!webLink &&
-                    <a href={webLink} target='_blank' rel='noreferrer'><TbWorldWww /></a>
-                }
-                {!!codeLink &&
-                    <a href={codeLink} target='_blank' rel="noreferrer"><FaGithub /></a>
-                }
-                {!!expoSnack &&
-                    <a href={expoSnack} target='_blank' rel="noreferrer"><SiExpo /></a>
-                }
-                {!!googlePlay &&
-                    <a href={googlePlay} target='_blank' rel="noreferrer"><FaGooglePlay /></a>
-                }
+            <div className="project-desc">
+                <h4>{title}</h4>
+                <p className='description'>{description}</p>
+                <div className='links'>
+                    {!!webLink &&
+                        <a href={webLink} target='_blank' rel='noreferrer'><TbWorldWww /></a>
+                    }
+                    {!!codeLink &&
+                        <a href={codeLink} target='_blank' rel="noreferrer"><FaGithub /></a>
+                    }
+                    {!!expoSnack &&
+                        <a href={expoSnack} target='_blank' rel="noreferrer"><SiExpo /></a>
+                    }
+                    {!!googlePlay &&
+                        <a href={googlePlay} target='_blank' rel="noreferrer"><FaGooglePlay /></a>
+                    }
+                </div>
             </div>
         </div >
     )

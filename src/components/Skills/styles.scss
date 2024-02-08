@@ -30,4 +30,23 @@
       }
     }
   }
+  @include breakpoint-small {
+    .container-skills {
+      width: 50%;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+
+      .skill-section {
+        gap: 2rem;
+        .icon-container {
+          .icon {
+            font-size: 3.5rem;
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
 }

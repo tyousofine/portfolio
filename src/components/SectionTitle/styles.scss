@@ -10,3 +10,9 @@
     border-bottom: 1px solid $accent-color;
   }
 }
+
+@include breakpoint-small {
+  .sectionTitle {
+    margin: 11rem 0 8rem 0;
+  }
+}

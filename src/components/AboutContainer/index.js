@@ -13,8 +13,10 @@ export default function AboutContainer() {
     return (
         <div className='container-about' id='container-about'>
             <SectionTitle sectionTitle={"About"} />
-            <Slogan />
-            <About />
+            <div className='container-paragraphs'>
+                <Slogan />
+                <About />
+            </div>
         </div>
     )
 }

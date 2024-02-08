@@ -5,7 +5,14 @@ import React from 'react'
 export default function About() {
     return (
         <div className='about'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestiae rem accusantium, molestias pariatur, vitae veniam laborum iste aliquid neque accusamus magni. Quod, ducimus harum, dolores perspiciatis mollitia ad velit voluptatum omnis fugiat quidem quaerat labore. Assumenda rem blanditiis saepe, natus architecto incidunt ullam ex numquam atque maxime nesciunt obcaecati!  .</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestiae rem accusantium,
+
+                <br /><br />
+
+                molestias pariatur, vitae veniam laborum iste aliquid neque accusamus magni. Quod, ducimus harum, dolores perspiciatis mollitia ad velit voluptatum omnis fugiat quidem quaerat labore. Assumenda rem blanditiis saepe, natus architecto incidunt ullam ex numquam atque maxime nesciunt obcaecati! <br /><br />
+
+
+                molestias pariatur, vitae veniam laborum iste aliquid neque accusamus magni. Quod, ducimus harum, dolores perspiciatis mollitia ad velit voluptatum omnis fugiat quidem quaerat labore. Assumenda rem blanditiis saepe, natus architecto incidunt ullam ex numquam atque maxime nesciunt obcaecati!  .</p>
         </div>
     )
 }

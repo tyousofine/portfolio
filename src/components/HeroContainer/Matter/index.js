@@ -14,7 +14,7 @@ function Matter(props) {
     const engine = useRef(Engine.create())
     const render = useRef(null)
 
-    const padding = 10;
+    const padding = 30;
 
     let [meIntervalCount, setMeIntervalCount] = useState(0)
     let [logoIntervalCount, setLogoIntervalCount] = useState(0)
@@ -24,12 +24,18 @@ function Matter(props) {
 
     // function to update frame size based on screen size change
     const updateDimensions = () => {
-        if (window.innerWidth > 600) {
-            cw = window.innerWidth / 2.7 - padding;
-        } else {
-            cw = window.innerWidth - padding
+        if (window.innerWidth >= 600 && window.innerWidth <= 900) {
+            cw = 450;
+            ch = 400;
         }
-        ch = 300;
+
+        else if (window.innerWidth > 900) {
+            cw = 600
+            ch = 500
+        } else {
+            cw = 350
+            ch = 300;
+        }
     }
 
     updateDimensions()
@@ -49,26 +55,27 @@ function Matter(props) {
         })
 
         World.add(engine.current.world, [
+            //top
             Bodies.rectangle(cw / 2, -10, cw, 20, {
                 isStatic: true, render: {
-                    strokeStyle: '#111'
+                    strokeStyle: '#0a0f1b'
                 }
             }),
             Bodies.rectangle(-10, ch / 2, 20, ch, {
                 isStatic: true, render: {
-                    strokeStyle: '#111',
+                    strokeStyle: '#0a0f1b',
 
                 }
             }),
             Bodies.rectangle(cw / 2, ch + 10, cw, 20, {
                 isStatic: true, render: {
-                    strokeStyle: '#111'
+                    strokeStyle: '#0a0f1b'
                 }
             }),
             // bottom boundary
             Bodies.rectangle(cw + 10, ch / 2, 20, ch, {
                 isStatic: true, render: {
-                    strokeStyle: '#111',
+                    strokeStyle: '#0a0f1b',
                 }
 
             }),
@@ -229,7 +236,7 @@ function Matter(props) {
     }
 
     return (
-        <div className='container-matter' >
+        <div className='container-matter' style={{ width: { cw } }}>
             <>
                 <div
                     onMouseDown={handleMouseDown}

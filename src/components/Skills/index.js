@@ -58,9 +58,7 @@ export default function Skills() {
                     <ReactIcon iconName="SiD3Dotjs" className="icon" text="D3.js" />
                     <ReactIcon iconName="SiMatterdotjs" className="icon" text="Matter.js" />
                 </div>
-                <div className="skill-section">
-                    <ReactIcon iconName="FaWordpress" className="icon" text="WordPress" />
-                </div>
+
                 <div className='skill-section'>
                     <ReactIcon iconName="SiMysql" className="icon" text="MySql" />
                     <ReactIcon iconName="SiFirebase" className="icon" text="Firebase" />
@@ -72,6 +70,7 @@ export default function Skills() {
                     <ReactIcon iconName="FaGitAlt" className="icon" text="Git" />
                     <ReactIcon iconName="FaGithub" className="icon" text="GitHub" />
                     <ReactIcon iconName="FaBitbucket" className="icon" text="Bitbucket" />
+                    <ReactIcon iconName="FaWordpress" className="icon" text="WordPress" />
                 </div>
                 <div className="skill-section">
                     <ReactIcon iconName="SiCanva" className="icon" text="Canva" />

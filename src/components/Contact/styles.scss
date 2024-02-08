@@ -100,4 +100,15 @@
       display: none;
     }
   }
+
+  @include breakpoint-small {
+    max-width: 800px;
+    margin: 0 auto;
+    .form-contact {
+      .name-subject-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }

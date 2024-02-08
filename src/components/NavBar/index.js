@@ -51,10 +51,18 @@ export default function NavBar() {
             {/* navbar for desktop size */}
             <nav className='navbar'>
                 <ul className='nav-ul'>
-                    <li className='nav-list'>About</li>
-                    <li className='nav-list'>Skills</li>
-                    <li className='nav-list'>Projects</li>
-                    <li className='nav-list'>Contact</li>
+                    <a href="#container-about">
+                        <li className='nav-list'>About</li>
+                    </a>
+                    <a href="#skills">
+                        <li className='nav-list'>Skills</li>
+                    </a>
+                    <a href="#container-projects">
+                        <li className='nav-list'>Projects</li>
+                    </a>
+                    <a href="#form-contact">
+                        <li className='nav-list'>Contact</li>
+                    </a>
                 </ul>
             </nav>
         </div>
