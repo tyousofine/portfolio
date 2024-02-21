@@ -19,7 +19,7 @@ export default function Footer() {
             <div className='contact-icons'>
                 <a href="mailto:tyoussefian@gmail.com"><FaEnvelope /></a>
                 <a href="https://github.com/tyousofine"><FaGithubSquare /></a>
-                <a href="https//:www.linkedin.com/in/tyoussefian"><FaLinkedin /></a>
+                <a href="https://www.linkedin.com/in/tyoussefian"><FaLinkedin /></a>
             </div>
         </div>
     )
