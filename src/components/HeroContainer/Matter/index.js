@@ -28,7 +28,12 @@ function Matter(props) {
             cw = 350;
             ch = 300;
         }
-        else if (window.innerWidth >= 600 && window.innerWidth <= 900) {
+
+        else if (window.innerWidth >= 600 && window.innerWidth < 750) {
+            cw = 400;
+            ch = 300;
+        }
+        else if (window.innerWidth >= 750 && window.innerWidth <= 900) {
             cw = 450;
             ch = 350;
         }
