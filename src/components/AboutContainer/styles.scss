@@ -15,9 +15,11 @@
 }
 
 @include breakpoint-small {
+  .sectionTitle {
+    margin-top: 0;
+  }
   .container-about {
     overflow: none;
-
     width: 80%;
 
     .container-paragraphs {
@@ -29,7 +31,7 @@
 
       .about {
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.1rem;
         max-width: 600px;
         min-width: 300px;
       }
@@ -41,12 +43,12 @@
 
         h3 {
           text-align: left;
-          font-size: 2.8rem;
+          font-size: 2rem;
         }
 
         h2 {
           text-align: left;
-          font-size: 2.4rem;
+          font-size: 2.2rem;
         }
       }
     }

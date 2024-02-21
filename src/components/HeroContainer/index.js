@@ -7,12 +7,12 @@ import './styles.scss'
 
 export default function HeroContainer() {
     return (
-        <div className="halfCircle">
-            <div className="container-hero">
-                <Matter />
-                <Intro />
-            </div>
+
+        <div className="container-hero">
+            <Matter />
+            <Intro />
         </div>
+
 
     )
 }
