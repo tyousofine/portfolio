@@ -23,7 +23,7 @@
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    background-color: $background-color;
+    background-color: $bg-color-second;
     border-left: 1px solid $main-color;
     right: -8px;
     animation: cursor 0.8s infinite, typing 20s steps(14) infinite;

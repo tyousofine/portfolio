@@ -3,6 +3,9 @@
 .skills {
   margin-top: 0;
   gap: 2rem;
+  background-color: $bg-color-main;
+  padding-bottom: 5rem;
+  border: 1px solid transparent;
 
   .container-skills {
     display: flex;
@@ -24,26 +27,31 @@
         }
 
         p {
-          color: $text-color;
+          color: $text-onDark;
           font-size: 0.9em;
         }
       }
     }
   }
-  @include breakpoint-small {
+}
+
+@include breakpoint-small {
+  .skills {
+    margin: 0 auto;
+
     .container-skills {
       width: 50%;
+
       margin: 0 auto;
       display: grid;
       place-items: center;
+      padding-bottom: 3rem;
 
       .skill-section {
         gap: 2rem;
         .icon-container {
           .icon {
             font-size: 3.5rem;
-          }
-          p {
           }
         }
       }

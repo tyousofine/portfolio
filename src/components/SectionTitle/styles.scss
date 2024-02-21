@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .sectionTitle {
-  margin: 9rem 0 3rem 0;
+  margin: 6rem 0 3rem 0;
   text-align: center;
 
   h4 {
@@ -13,6 +13,6 @@
 
 @include breakpoint-small {
   .sectionTitle {
-    margin: 11rem 0 8rem 0;
+    margin: 6rem 0 8rem 0;
   }
 }

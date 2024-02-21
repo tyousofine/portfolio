@@ -2,8 +2,9 @@
 
 .container-contact {
   margin: 0 1rem;
-  margin-bottom: 8rem;
   position: relative;
+  border: 1px solid transparent;
+  padding-bottom: 5rem;
 
   .container-form {
     background-color: $card-color;
@@ -41,7 +42,7 @@
         }
 
         &::placeholder {
-          color: $text-color;
+          color: $text-onDark;
         }
 
         &:focus {
@@ -61,7 +62,7 @@
         background-color: transparent;
         outline: none;
         border: 0.13rem solid $accent-color;
-        color: $text-color;
+        color: $text-onDark;
         text-transform: uppercase;
         // font-weight: bold;
         font-size: 1rem;
@@ -80,8 +81,8 @@
       }
     }
     .contact-message {
-      background-color: rgba($text-color, 0.1);
-      color: $text-color;
+      background-color: rgba($text-onDark, 0.1);
+      color: $text-onDark;
       border-radius: 4px;
       margin: 1rem;
       margin-bottom: 1rem;
@@ -92,7 +93,7 @@
       padding: 0.3rem 0.8rem;
 
       svg {
-        color: $text-color;
+        color: $text-onDark;
         font-size: 1.3rem;
       }
     }
@@ -100,14 +101,22 @@
       display: none;
     }
   }
+}
 
-  @include breakpoint-small {
-    max-width: 800px;
+@include breakpoint-small {
+  .container-contact {
     margin: 0 auto;
-    .form-contact {
-      .name-subject-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    background-color: $bg-color-main;
+
+    .container-form {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+      .form-contact {
+        .name-subject-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
       }
     }
   }

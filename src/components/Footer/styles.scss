@@ -1,12 +1,12 @@
 @import "../../styles/variables.scss";
 
 .container-footer {
-  margin: 3rem 0 1rem 0;
   padding: 1rem;
   border-top: 1px solid $accent-color;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: $bg-color-main;
 
   .tradeMark {
     width: 50%;
@@ -32,5 +32,12 @@
       color: $main-color;
       opacity: 0.5;
     }
+  }
+}
+
+@include breakpoint-small {
+  .container-footer {
+    padding-right: 25%;
+    padding-left: 25%;
   }
 }

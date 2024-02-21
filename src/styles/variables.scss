@@ -1,12 +1,17 @@
-// $background-color: #1b1c1c;
-$body-color: #0a0f1b;
-// $body-color: #151f36;
-// $body-color: #0f172a;
-$background-color: #0f172a;
+// $body-color: #6c757d;
+// $bg-color-main: #0f172a;
+// $body-color: #0a0f1b;
+// $body-color: whitesmoke;
+$bg-color-main: #0a0f1b;
+$bg-color-second: #161d2e;
+$body-color: $bg-color-second;
+
 $card-color: #1e293b;
+// $main-color: #87ceeb;
 $main-color: #3b82f6;
 $accent-color: #ffa500;
-$text-color: #cbd5e1;
+$text-onDark: #cbd5e1;
+$text-onLight: $bg-color-main;
 
 @mixin breakpoint($min-width) {
   @media only screen and (min-width: $min-width) {

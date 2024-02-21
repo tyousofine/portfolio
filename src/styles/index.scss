@@ -13,18 +13,18 @@ html {
   // font-family: "Quicksand", Arial, sans-serif;
   font-family: "Nunito sans", Arial, sans-serif;
   // font-family: "Roboto", Arial, sans-serif;
+  overflow-y: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 body {
-  background-color: $background-color;
+  background-color: $body-color;
   color: $main-color;
   font-size: 18px;
 }
 
 .App {
-  max-width: 1200px;
-  background-color: $background-color;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ h1 {
   font-family: "Cormorant Garamond", serif;
   font-weight: bolder;
   // font-size: 2.8em;
-  color: $text-color;
+  color: $text-onDark;
   letter-spacing: 0.1rem;
 }
 
@@ -55,5 +55,5 @@ h3 {
 }
 
 p {
-  color: $text-color;
+  color: $text-onDark;
 }

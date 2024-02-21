@@ -24,14 +24,18 @@ function Matter(props) {
 
     // function to update frame size based on screen size change
     const updateDimensions = () => {
-        if (window.innerWidth >= 600 && window.innerWidth <= 900) {
+        if (window.innerWidth >= 0 && window.innerWidth < 600) {
+            cw = 350;
+            ch = 300;
+        }
+        else if (window.innerWidth >= 600 && window.innerWidth <= 900) {
             cw = 450;
-            ch = 400;
+            ch = 350;
         }
 
         else if (window.innerWidth > 900) {
-            cw = 600
-            ch = 500
+            cw = 550
+            ch = 350
         } else {
             cw = 350
             ch = 300;
@@ -58,24 +62,24 @@ function Matter(props) {
             //top
             Bodies.rectangle(cw / 2, -10, cw, 20, {
                 isStatic: true, render: {
-                    strokeStyle: '#0a0f1b'
+                    strokeStyle: 'transparent'
                 }
             }),
             Bodies.rectangle(-10, ch / 2, 20, ch, {
                 isStatic: true, render: {
-                    strokeStyle: '#0a0f1b',
+                    strokeStyle: 'transparent',
 
                 }
             }),
             Bodies.rectangle(cw / 2, ch + 10, cw, 20, {
                 isStatic: true, render: {
-                    strokeStyle: '#0a0f1b'
+                    strokeStyle: 'transparent'
                 }
             }),
             // bottom boundary
             Bodies.rectangle(cw + 10, ch / 2, 20, ch, {
                 isStatic: true, render: {
-                    strokeStyle: '#0a0f1b',
+                    strokeStyle: 'transparent',
                 }
 
             }),
