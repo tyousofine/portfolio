@@ -57,6 +57,7 @@ export default function Skills() {
                     <ReactIcon iconName="SiNextdotjs" className="icon" text="Next.js" />
                     <ReactIcon iconName="SiD3Dotjs" className="icon" text="D3.js" />
                     <ReactIcon iconName="SiMatterdotjs" className="icon" text="Matter.js" />
+                    <ReactIcon iconName="FaNodeJs" className="icon" text="NodeJs" />
                 </div>
 
                 <div className='skill-section'>
@@ -64,7 +65,6 @@ export default function Skills() {
                     <ReactIcon iconName="SiFirebase" className="icon" text="Firebase" />
                     <ReactIcon iconName="SiMongodb" className="icon" text="MongoDB" />
                     <ReactIcon iconName="FaPhp" className="icon" text="PHP" />
-                    <ReactIcon iconName="FaNodeJs" className="icon" text="NodeJs" />
                 </div>
                 <div className="skill-section">
                     <ReactIcon iconName="FaGitAlt" className="icon" text="Git" />

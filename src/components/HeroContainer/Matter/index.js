@@ -104,7 +104,7 @@ function Matter(props) {
         }
     }, [cw, ch])
 
-    // create and add drop functions for images dropping
+    // create and add drop functions for images
     useEffect(() => {
         const createMe = () => World.add(engine.current.world, Bodies.circle(Math.random() * cw, 0, 10 + Math.random() * 20, {
             mass: 10, restitution: 1, friction: 0.005, render: {
@@ -151,7 +151,7 @@ function Matter(props) {
             createLogo()
             setLogoIntervalCount(logoIntervalCount += 1);
 
-            if (logoIntervalCount >= 10) {
+            if (logoIntervalCount >= 20) {
                 clearInterval(dropLogo)
             }
 
@@ -161,7 +161,7 @@ function Matter(props) {
             createOrangeLogo()
             setOrangeLogoIntervalCount(orangeLogoIntervalCount += 1);
 
-            if (logoIntervalCount >= 5) {
+            if (logoIntervalCount >= 20) {
                 clearInterval(dropOrangeLogo)
             }
 

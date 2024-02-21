@@ -41,15 +41,13 @@
     padding-top: 3rem;
 
     .container-skills {
-      width: 50%;
-
       margin: 0 auto;
-      display: grid;
-      place-items: center;
       padding-bottom: 3rem;
+      width: 80%;
 
       .skill-section {
-        gap: 2rem;
+        gap: 4rem;
+
         .icon-container {
           .icon {
             font-size: 3.5rem;
