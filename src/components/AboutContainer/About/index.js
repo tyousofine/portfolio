@@ -5,14 +5,17 @@ import React from 'react'
 export default function About() {
     return (
         <div className='about'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus molestiae rem accusantium,
-
+            <p>Greetings! I'm Tina, a Full Stack Developer. While my background is in the music and banking, my passion has always been in the realm of web development and programming.
+                <br /><br />
+                Equipped with the latest skills and a degree in Web Development, I am driven by the thrill of problem-solving. My dedication to the craft goes hand-in-hand with my love for learning and tenacity as I believe that the ever-evolving tech landscape is a canvas for endless possibilities.
+                <br /><br />
+                When I'm not busy working on various projects, you'll find me... cooking! There's something magical about preparing a meal and sharing it with others. It's my way of bringing people together and creating memorable experiences outside the digital realm.
                 <br /><br />
 
-                molestias pariatur, vitae veniam laborum iste aliquid neque accusamus magni. Quod, ducimus harum, dolores perspiciatis mollitia ad velit voluptatum omnis fugiat quidem quaerat labore. Assumenda rem blanditiis saepe, natus architecto incidunt ullam ex numquam atque maxime nesciunt obcaecati! <br /><br />
 
 
-                molestias pariatur, vitae veniam laborum iste aliquid neque accusamus magni. Quod, ducimus harum, dolores perspiciatis mollitia ad velit voluptatum omnis fugiat quidem quaerat labore. Assumenda rem blanditiis saepe, natus architecto incidunt ullam ex numquam atque maxime nesciunt obcaecati!  .</p>
+
+            </p>
         </div>
     )
 }
