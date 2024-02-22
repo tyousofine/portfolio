@@ -1,6 +1,7 @@
 import onTrack from '../images/onTrack.png';
 import plugStreaming from '../images/PlugStreaming.png';
 import todoApp from '../images/todoApp.png';
+import portfolio from '../images/portfolio.png';
 
 export const projects = [{
     image: onTrack,
@@ -25,7 +26,18 @@ export const projects = [{
     description: "Who hasn't done a todo App in their coding journey? And here is a mine. A simple todo app for Android devices, published in Google Playstore. App is built with React Native and uses SQLite and the device's local storage.",
     expoSnack: "https://snack.expo.dev/@tyousofine/tystodoapp?platform=android",
     googlePlay: "http://play.google.com/store/apps/details?id=com.ty.creations.todo.app"
-}
+},
+
+{
+    image: portfolio,
+    title: "<TY/> Portfolio",
+    stack: ['JS', 'React', 'MatterJS'],
+    description: "Personal portfolio website designed and built by this page owner, using react, and Matter.js for the Hero Animation. ",
+    webLink: "https://tyoussefian.vercel.app",
+    codeLink: "https://github.com/tyousofine/portfolio"
+},
+
+
 
 
 ]

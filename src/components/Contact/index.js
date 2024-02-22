@@ -9,7 +9,7 @@ import { IoMdClose } from "react-icons/io";
 
 // component imports
 import SectionTitle from '../SectionTitle';
-import { TbDisabled } from 'react-icons/tb';
+
 
 export default function Contact() {
     const [name, setName] = useState('');
