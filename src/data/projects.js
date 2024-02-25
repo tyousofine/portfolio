@@ -40,7 +40,7 @@ export const projects = [
     },
     {
         image: orangeLogo,
-        title: "COMMING SOON! - Pantry Pal",
+        title: "COMING SOON! - Pantry Pal",
         stack: ['JS', 'React', 'OpenAI'],
         description: "An AI powered app that will create custom recipe with an image, based on exact ingredients provided by the user. The recipes are generated using OpenAI's API.",
         webLink: "#",
@@ -48,7 +48,7 @@ export const projects = [
     },
     {
         image: orangeLogo,
-        title: "COMMING SOON! - Diversey Maintenance",
+        title: "COMING SOON! - Diversey Maintenance",
         stack: ['JS', 'Next', 'MongoDB'],
         description: "A ticketing system app to streamline the communication and repair requests between the operators and the maintenance department.",
         webLink: "#",
@@ -56,7 +56,7 @@ export const projects = [
     },
     {
         image: orangeLogo,
-        title: "COMMING SOON! - Dice & Spice",
+        title: "COMING SOON! - Dice & Spice",
         stack: ['Angular', 'MongoDB'],
         description: "A recipe website for my family. Family members can add, view and search for each others favorite recipes.",
         webLink: "#",
