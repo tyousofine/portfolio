@@ -9,7 +9,7 @@ export const projects = [
         image: plugStreaming,
         title: 'Library and Dashboard for Plug Streaming',
         stack: ['JS', 'D3', 'HTML', 'CSS'],
-        description: 'A library and Dashboard for a streaming service Called Plug Streaming developed according to their specifications. Dashboard uses Youtube statistics to provide visualized analysis of data for the stake holders reference.',
+        description: "A library and Dashboard for a streaming service Called Plug Streaming developed according to their specifications. Dashboard uses Youtube statistics to provide visualized analysis of data for the stakeholders' reference.",
         webLink: "https://plugstreaming.vercel.app",
         codeLink: "https://github.com/tyousofine/PStreaming"
     },
