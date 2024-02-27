@@ -2,13 +2,14 @@ import onTrack from '../images/onTrack.png';
 import plugStreaming from '../images/PlugStreaming.png';
 import todoApp from '../images/todoApp.png';
 import portfolio from '../images/portfolio.png';
+import orangeLogo from '../images/TYlogoTransparent.png';
 
 export const projects = [
     {
         image: plugStreaming,
         title: 'Library and Dashboard for Plug Streaming',
         stack: ['JS', 'D3', 'HTML', 'CSS'],
-        description: 'A library and Dashboard for a streaming service Called Plug Streaming developed according to their specifications. Dashboard uses Youtube statistics to provide visualized analysis of data for the stake holders reference.',
+        description: "A library and Dashboard for a streaming service Called Plug Streaming developed according to their specifications. Dashboard uses Youtube statistics to provide visualized analysis of data for the stakeholders' reference.",
         webLink: "https://plugstreaming.vercel.app",
         codeLink: "https://github.com/tyousofine/PStreaming"
     },
@@ -22,7 +23,7 @@ export const projects = [
     },
     {
         image: onTrack,
-        title: 'OnTrack',
+        title: 'OnTrack - Desktop app',
         stack: ['React', 'HTML', 'SCSS', 'Firebase'],
         description: 'A simple project and task managing desktop app, designed and effective for small to medium sized teams. App comes with authentication, data management, as well as a live chat and comments feature.',
         webLink: "https://ontrackk.vercel.app/",
@@ -36,6 +37,30 @@ export const projects = [
         description: "Personal portfolio website designed and built by this page owner, using react, and Matter.js for the Hero Animation. ",
         webLink: "https://tyoussefian.vercel.app",
         codeLink: "https://github.com/tyousofine/portfolio"
+    },
+    {
+        image: orangeLogo,
+        title: "COMING SOON! - Pantry Pal",
+        stack: ['JS', 'React', 'OpenAI'],
+        description: "An AI powered app that will create custom recipe with an image, based on exact ingredients provided by the user. The recipes are generated using OpenAI's API.",
+        webLink: "#",
+        codeLink: "#",
+    },
+    {
+        image: orangeLogo,
+        title: "COMING SOON! - Diversey Maintenance",
+        stack: ['JS', 'Next', 'MongoDB'],
+        description: "A ticketing system app to streamline the communication and repair requests between the operators and the maintenance department.",
+        webLink: "#",
+        codeLink: "#",
+    },
+    {
+        image: orangeLogo,
+        title: "COMING SOON! - Dice & Spice",
+        stack: ['Angular', 'MongoDB'],
+        description: "A recipe website for my family. Family members can add, view and search for each others favorite recipes.",
+        webLink: "#",
+        codeLink: "#",
     },
 
 

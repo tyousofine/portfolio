@@ -8,7 +8,7 @@ import './styles.scss'
 export default function Intro() {
     return (
         <div className='intro'>
-            <h1>Tina Youssefian</h1>
+            <h1>Tina Y</h1>
             <h2>Web Developer</h2>
             <ContactLink />
         </div>
