@@ -4,13 +4,12 @@
 $bg-color-main: #0a0f1b;
 $bg-color-second: #161d2e;
 $body-color: $bg-color-second;
-
 $card-color: #1e293b;
 // $main-color: #87ceeb;
 $main-color: #3b82f6;
 $accent-color: #ffa500;
 $text-onDark: #cbd5e1;
-$text-onLight: $bg-color-main;
+$text-onLight: #0a0f1b;
 
 @mixin breakpoint($min-width) {
   @media only screen and (min-width: $min-width) {

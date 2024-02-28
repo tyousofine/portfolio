@@ -2,7 +2,10 @@ import onTrack from '../images/onTrack.png';
 import plugStreaming from '../images/PlugStreaming.png';
 import todoApp from '../images/todoApp.png';
 import portfolio from '../images/portfolio.png';
-import orangeLogo from '../images/TYlogoTransparent.png';
+import orangeLogo from '../images/TYlogoTransparent.png'
+import pantryPal from '../images/pantrypal.png';
+import diversey from '../images/diverseySupport.png';
+import dice from '../images/TYlogoTransparent.png';
 
 export const projects = [
     {
@@ -39,15 +42,15 @@ export const projects = [
         codeLink: "https://github.com/tyousofine/portfolio"
     },
     {
-        image: orangeLogo,
+        image: pantryPal,
         title: "COMING SOON! - Pantry Pal",
         stack: ['JS', 'React', 'OpenAI'],
-        description: "An AI powered app that will create custom recipe with an image, based on exact ingredients provided by the user. The recipes are generated using OpenAI's API.",
+        description: "An AI powered app that will create custom recipe and image, based on exact ingredients provided by the user. The recipes are generated using OpenAI's API.",
         webLink: "#",
         codeLink: "#",
     },
     {
-        image: orangeLogo,
+        image: diversey,
         title: "COMING SOON! - Diversey Maintenance",
         stack: ['JS', 'Next', 'MongoDB'],
         description: "A ticketing system app to streamline the communication and repair requests between the operators and the maintenance department.",
@@ -55,7 +58,7 @@ export const projects = [
         codeLink: "#",
     },
     {
-        image: orangeLogo,
+        image: dice,
         title: "COMING SOON! - Dice & Spice",
         stack: ['Angular', 'MongoDB'],
         description: "A recipe website for my family. Family members can add, view and search for each others favorite recipes.",

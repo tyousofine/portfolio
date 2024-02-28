@@ -11,12 +11,15 @@ import SectionTitle from '../SectionTitle'
 
 export default function AboutContainer() {
     return (
-        <div className='container-about' id='container-about'>
-            <SectionTitle sectionTitle={"About"} />
-            <div className='container-paragraphs'>
-                <Slogan />
-                <About />
+        <>
+            <div className='container-about' id='container-about'>
+                <SectionTitle sectionTitle={"About"} />
+                <div className='container-paragraphs'>
+                    <Slogan />
+                    <About />
+                </div>
             </div>
-        </div>
+
+        </>
     )
 }

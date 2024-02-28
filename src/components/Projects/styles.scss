@@ -8,14 +8,13 @@
 
 @include breakpoint-small {
   .container-projects {
-    width: 90%;
     margin: 0 auto;
     padding-bottom: 4rem;
     padding-top: 3rem;
 
     .innerContainer-projects {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 40vw 40vw;
       place-content: center;
       grid-gap: 2rem;
     }
