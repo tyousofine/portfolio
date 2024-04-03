@@ -1,18 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+//component imports
 import Matter from './Matter'
 import Intro from './Intro'
-import ContactLink from './ContactLink'
+
 
 import './styles.scss'
 
 export default function HeroContainer() {
+    const [delayedRender, setDelayedRender] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setDelayedRender(true);
+        }, 800);
+
+        return () => clearTimeout(timer);
+    }, []);
     return (
 
         <div className="container-hero">
-            <Matter />
-            <Intro />
+            {delayedRender && (
+                <>
+                    <Matter />
+                    <Intro />
+                </>
+            )}
         </div>
-
 
     )
 }
