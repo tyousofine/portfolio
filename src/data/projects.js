@@ -43,11 +43,11 @@ export const projects = [
     },
     {
         image: pantryPal,
-        title: "COMING SOON! - Pantry Pal",
+        title: "Pantry Pal",
         stack: ['JS', 'React', 'OpenAI'],
         description: "An AI powered app that will create custom recipe and image, based on exact ingredients provided by the user. The recipes are generated using OpenAI's API.",
-        webLink: "#",
-        codeLink: "#",
+        webLink: "https://aipantrypal.vercel.app/",
+        codeLink: "https://github.com/tyousofine/pantrypal",
     },
     {
         image: diversey,
